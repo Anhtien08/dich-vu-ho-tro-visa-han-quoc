@@ -1,5 +1,7 @@
 import React from 'react';
 import { ShieldCheck, FileCheck, CheckCircle2, Award, Clock } from 'lucide-react';
+// Import hình ảnh đúng chuẩn Vite/React
+import dossierImg from '../assets/images/dossier_consultation_1792985144950.jpg';
 
 export const ProcessTimeline: React.FC = () => {
   const steps = [
@@ -38,7 +40,7 @@ export const ProcessTimeline: React.FC = () => {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg group">
               <img
-                src="/src/assets/images/dossier_consultation_1792985144950.jpg"
+                src={dossierImg}
                 alt="Thẩm định hồ sơ visa Hàn Quốc tại Visa5S"
                 className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                 referrerPolicy="no-referrer"
