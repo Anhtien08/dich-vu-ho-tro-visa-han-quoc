@@ -105,12 +105,11 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Column: Hero Visual Asset + Quick Tracker Widget */}
           <div className="lg:col-span-5 flex flex-col gap-4">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/90 group bg-slate-900 aspect-[16/10] sm:aspect-[16/10]">
-              <img
-                src="/src/assets/images/hero_seoul_diplomatic_1792985142748.jpg"
-                alt="Trung tâm tư vấn Visa Hàn Quốc Visa5S - Toàn cảnh Seoul hiện đại"
-                className="w-full h-full object-cover transform group-hover:scale-102 transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
+         <img
+          src={heroImage}
+          alt="Trung tâm tư vấn Visa Hàn Quốc Visa5S - Toàn cảnh Seoul hiện đại"
+          className="w-full h-full object-cover transform group-hover:scale-102 transition-transform duration-700"
+        />
               <div className="absolute inset-0 bg-gradient-to-t from-[#161984]/90 via-[#161984]/30 to-transparent pointer-events-none" />
 
               {/* Inset Badge */}
