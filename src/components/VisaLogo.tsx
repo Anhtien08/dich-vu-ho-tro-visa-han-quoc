@@ -47,7 +47,7 @@ export const VisaLogo: React.FC<VisaLogoProps> = ({
               theme === 'dark' ? 'text-white' : 'text-[#161984]'
             }`}
           >
-            HỆ THỐNG VISA 5S
+            VISA 5S
           </span>
           <span
             className={`text-[10px] font-medium tracking-wide ${

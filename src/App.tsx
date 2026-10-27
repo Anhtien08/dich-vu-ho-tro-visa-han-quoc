@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { VisaDetailModal } from './components/VisaDetailModal';
 import { UrgentConsultationModal } from './components/UrgentConsultationModal';
 import { MobileStickyBar } from './components/MobileStickyBar';
+import { FloatingCallButton } from './components/FloatingCallButton';
 import { VisaCategory, VisaCategoryCode } from './types/visa';
 
 export default function App() {
@@ -104,6 +105,12 @@ export default function App() {
       {/* 13. Mobile Sticky Action Bar */}
       <MobileStickyBar
         onOpenConsultation={() => handleOpenConsultation('C-3-9')}
+      />
+
+      {/* 14. Floating Call & Hotline Popup at Bottom Right */}
+      <FloatingCallButton
+        primaryPhone="0911909686"
+        secondaryPhone="0967686101"
       />
     </div>
   );

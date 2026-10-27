@@ -1,6 +1,7 @@
 import React from 'react';
 import { CASE_STUDIES } from '../data/visaData';
 import { ShieldCheck, CheckCircle2, MapPin, ArrowRight } from 'lucide-react';
+import seoulTravelImg from '../assets/images/seoul_lifestyle_travel_1792985143141.jpg';
 
 interface CaseStudiesProps {
   onOpenConsultation: () => void;
@@ -75,10 +76,9 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenConsultation }) 
         {/* Seoul travel editorial photo strip with quote */}
         <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm aspect-[21/9] sm:aspect-[21/7]">
           <img
-            src="/src/assets/images/seoul_lifestyle_travel_1792985143141.jpg"
+            src={seoulTravelImg}
             alt="Du lịch Hàn Quốc cùng Visa5S"
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#161984]/95 via-[#161984]/80 to-transparent flex items-center p-6 sm:p-10">
             <div className="max-w-xl text-white">
